@@ -14,9 +14,9 @@ SCRATCH="scratch"
 THIN=`pwd`/"thin"
 
 # absolute path to x264 library
-#X264=`pwd`/fat-x264
+X264=`pwd`/../x264-iOS-build-script/x264-iOS
 
-#FDK_AAC=`pwd`/../fdk-aac-build-script-for-iOS/fdk-aac-ios
+FDK_AAC=`pwd`/../fdk-aac-build-script-for-iOS/fdk-aac-ios
 
 CONFIGURE_FLAGS="--enable-cross-compile --disable-debug --disable-programs \
                  --disable-doc --enable-pic"
@@ -32,7 +32,7 @@ then
 fi
 
 # avresample
-#CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
+CONFIGURE_FLAGS="$CONFIGURE_FLAGS --enable-avresample"
 
 ARCHS="arm64 armv7 x86_64 i386"
 
